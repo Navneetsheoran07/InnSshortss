@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tittle"
+        android:textSize="25sp"
+        android:id="@+id/titletext"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tittle"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/titletext"
+        android:id="@+id/titleedit"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="desc"
+        android:textSize="25sp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/titletext"
+        android:id="@+id/desctext"
+        />
+
+    <EditText
+        android:id="@+id/dwscedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleedit"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/titletext"
+        android:hint="desc"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Imagelink"
+        android:textSize="25sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@id/desctext"
+        android:id="@+id/imagelinktext"
+        />
+
+    <EditText
+        android:id="@+id/imagelinkedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dwscedit"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/imagelinktext"
+        android:hint="Imagelink"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Newslink"
+        android:textSize="25sp"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/imagelinktext"
+        android:id="@+id/newslinktext"
+        />
+
+    <EditText
+        android:id="@+id/newslinkedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/imagelinkedit"
+        android:layout_toRightOf="@id/newslinktext"
+        android:hint="Newslink"
+        android:textSize="25sp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Head"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/newslinktext"
+        android:id="@+id/headtext"
+        />
+
+    <EditText
+        android:id="@+id/headedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/newslinkedit"
+        android:layout_toRightOf="@id/headtext"
+        android:hint="head"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headedit"
+        android:id="@+id/submitdatabtn"
+        android:text="Submit"/>
+</RelativeLayout>
+
+</ScrollView>
